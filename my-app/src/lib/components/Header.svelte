@@ -8,10 +8,10 @@
     </a>
     <div class="header-navigation">
         <a href="/" class="left">
-            <a href="/"><img src="images/huisjemeteffects.png" class="nav-icons" alt="bla"></a>
+            <a href="/"><img src="images/huisjemeteffects.png" class="nav-icons" alt="homepage"></a>
         </a>
         <a href="/" class="right">
-            <a href="/"><img src="images/infometeffects.png" class="nav-icons" alt="bla"></a>
+            <a href="/info"><img src="images/infometeffects.png" class="nav-icons" alt="info page"></a>
         </a>
     </div>
     <div class="header-socials">
