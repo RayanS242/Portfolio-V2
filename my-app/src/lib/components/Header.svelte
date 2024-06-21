@@ -4,19 +4,19 @@
 
 <header> 
     <a href="/" class="header-logo">
-        <h1>R</h1>
-        <div>
-            <p>Rayan</p>
-            <p>Web Developer</p>
-        </div>
+        <img src="images/logoklowed.png" alt="rayan logo" />
     </a>
     <div class="header-navigation">
-        <a href="/">Home</a>
-        <a href="/">Info</a>
+        <a href="/" class="left">
+            <a href="/"><img src="images/huisjemeteffects.png" class="nav-icons" alt="bla"></a>
+        </a>
+        <a href="/" class="right">
+            <a href="/"><img src="images/infometeffects.png" class="nav-icons" alt="bla"></a>
+        </a>
     </div>
     <div class="header-socials">
-        <a href="https://github.com/RayanSp">GitHub</a>
-        <a href="https://www.linkedin.com/in/rayan-spall-5b341b29a/">Linkedin</a>
+        <a href="https://github.com/RayanSp">GitHub<img src="images/arrow.png" class="arrow-img" alt="arrow logo"></a>
+        <a href="https://www.linkedin.com/in/rayan-spall-5b341b29a/">Linkedin<img src="images/arrow.png" class="arrow-img" alt="arrow logo"></a>
     </div>
 </header>
 
@@ -27,7 +27,9 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 1rem;
+    /* width: 100%; */
 }
 
 .header-logo {
@@ -35,14 +37,17 @@ header {
     flex-direction: row;
 }
 
-h1 {
-    color: white;
-    font-size: 50px;
+.nav-icons {
+    height: 2rem;
+}
+
+img {
+    height: 3rem;
 }
 
 p {
     color: white;
-    transform: translateY(80%);
+    /* transform: translateY(80%); */
 }
 
 a {
@@ -52,16 +57,53 @@ a {
 .header-navigation {
     display: flex;
     flex-direction: row;
-    background-color: rgb(56, 52, 52);
-    border-radius: 15px;
-    /* width: 10rem; */
+}
+
+.header-navigation .left {
+    display: flex;
+    flex-direction: row;
+    background-color: #363636;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 5rem;
+    height: 3rem;
     justify-content: center;
 }
 
-.header-navigation a {
+.header-navigation .right {
     display: flex;
-    align-items: center;
-    padding: 1rem;
+    flex-direction: row;
+    background-color: #363636;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 5rem;
+    height: 3rem;
+    justify-content: center;
+}
+
+.left {
+    transition: .2s ease-in-out
+}
+
+.right {
+    transition: .2s ease-in-out
+}
+
+.left a {
+    margin: auto;
+}
+
+.right a {
+    margin: auto;
+}
+
+.right:hover {
+    background-color: #282828;
+}
+
+
+.left:hover {
+    background-color: #282828;
 }
 
 div a {
@@ -70,12 +112,17 @@ div a {
 }
 
 .header-socials {
-    transform: translateY(30%);
+    display: flex;
 }
 
-a:active {
-    background-color: rgb(37, 37, 37);
-    border-radius: 15px;
+.header-socials a {
+    margin: auto;
+    padding-right: 1rem;
+}
+
+.arrow-img {
+    height: 1.5rem;
+    margin: auto;
 }
 
 </style>
