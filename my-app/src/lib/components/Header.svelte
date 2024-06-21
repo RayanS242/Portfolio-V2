@@ -10,7 +10,7 @@
         <a href="/" class="left">
             <a href="/"><img src="images/huisjemeteffects.png" class="nav-icons" alt="homepage"></a>
         </a>
-        <a href="/" class="right">
+        <a href="/info" class="right">
             <a href="/info"><img src="images/infometeffects.png" class="nav-icons" alt="info page"></a>
         </a>
     </div>
